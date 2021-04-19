@@ -1,36 +1,31 @@
 .headerContainer {
   height: 5rem;
-
   border-bottom: 1px solid var(--gray-800);
+  background: #131319;
+  min-width: 560px;
 }
 
 .headerContent {
   max-width: 1120px;
   height: 5rem;
 
-  padding: 0 2rem;
   margin: 0 auto;
+  padding: 0 2rem;
 
   display: flex;
   align-items: center;
 
   nav {
+    margin-left: 5rem;
     height: 5rem;
 
-    margin-left: 5rem;
-
     a {
-      position: relative;
-
-      height: 5rem;
-
-      padding: 0 0.5rem;
-
       display: inline-block;
-
-      color: var(--gray-300);
-
+      position: relative;
+      padding: 0 0.5rem;
+      height: 5rem;
       line-height: 5rem;
+      color: var(--gray-300);
 
       transition: color 0.2s;
 
@@ -42,13 +37,12 @@
         color: var(--white);
       }
 
-      &.active {
-        font-weight: bold;
-
+      &:active {
         color: var(--white);
+        font-weight: 700;
       }
 
-      &.active::after {
+      &:active::after {
         position: absolute;
         bottom: 1px;
         left: 0;
