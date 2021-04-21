@@ -23,6 +23,7 @@ commands.txt
 .env.local
 .env.production
 .env.development
+yarn.lock
 
 # debug
 npm-debug.log*

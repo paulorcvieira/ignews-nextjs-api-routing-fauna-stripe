@@ -1,34 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+    <h1>Ig.news</h1>
+    <p>📰 News about the React world.</p>
+    <hr />
+    <p>
+        <a href="https://rocketseat.com/"><img src="https://img.shields.io/badge/type-ignite-red" alt="Repo Type" /></a>
+        <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/language-typescript-blue" alt="Repo Main Language" /></a>
+        <img src="https://img.shields.io/badge/platform-web-blueviolet" alt="Project Platform" />
+        <a href="https://github.com/paulorcvieira/ignews-nextjs-api-routing-fauna-stripe/tree/dev/LICENSE"><img src="https://img.shields.io/github/license/paulorcvieira/ignews-nextjs-api-routing-fauna-stripe?color=red&label=license" alt="Repo License" /></a>
+    </p>
+    <p><a href="https://www.linkedin.com/in/paulorcvieira" target="_blank"><img src="https://img.shields.io/twitter/url?label=Connect%20%40paulorcvieira&logo=linkedin&url=https%3A%2F%2Fwww.twitter.com%2paulorcvieira%2F" alt="Follow" /></a><p>
+</div>
 
-## Getting Started
+# Deploy
+[Ig.news](https://ignews-kxhw1lfjo-paulorcvieira.vercel.app/)
 
-First, run the development server:
+<br>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+# About
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+An application where the user can subscribe to text content, like a newsletter in the case related to news about the world of React and the ecosystem it has.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+![cover](./.github/cover.gif)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+# Techs
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+ - [Next.js](https://nextjs.org/) 
+ - [Stripe](https://stripe.com/) 
+ - [FaunaDB](https://fauna.com/) 
+ - [React.js](https://reactjs.org/)
+ - [TypeScript](https://www.typescriptlang.org/)
 
-## Learn More
+# Requirements
 
-To learn more about Next.js, take a look at the following resources:
+- [Git](https://git-scm.com/) installed
+- [Node](https://node.js.org/) installed
+- Npm or [Yarn](https://yarnpkg.com/) installed
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Usage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Run `yarn install`.
+- Run `yarn dev` and access `http://localhost:3000`
 
-## Deploy on Vercel
+# Author
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [paulorcvieira](https://github.com/paulorcvieira)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<br>
+<br>
+<br>
+<br>
+
+<div align="center">
+  <h1>Open Source</h1>
+  <sub>Copyright © 2021-present, paulorcvieira.</sub>
+  <p>Ig.news <a href="https://github.com/paulorcvieira/ignews-nextjs-api-routing-fauna-stripe/tree/dev/LICENSE">is MIT licensed </a></p>
+</div>
