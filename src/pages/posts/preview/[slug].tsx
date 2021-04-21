@@ -50,8 +50,9 @@ export default function PostPreview({ post }: PostPreviewProps) {
           <div className={styles.continueReading}>
             Wanna continue reading?
             <Link href="/">
-              <a>Subscribe now 🤗</a>
+              <a>Subscribe now</a>
             </Link>
+            {" "}🤗
           </div>
         </article>
       </main>
@@ -71,7 +72,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
   const prismic = getPrismicClient();
 
-  const response = await prismic.getByUID('posts', String(slug), {});
+  const response = await prismic.getByUID('post', String(slug), {});
 
   const post = {
     slug,
