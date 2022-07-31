@@ -1,4 +1,4 @@
-import { useSession, signIn } from 'next-auth/client';
+import { signIn, useSession } from 'next-auth/client';
 import { useRouter } from 'next/dist/client/router';
 
 import { api } from '../../services/api';
@@ -22,7 +22,7 @@ export function SubscribeButton({ priceId }: SubscribeButtonProps) {
       return;
     }
 
-    if (session?.activeSubscription) {
+    if (session.activeSubscription) {
       router.push('/posts')
 
       return;
