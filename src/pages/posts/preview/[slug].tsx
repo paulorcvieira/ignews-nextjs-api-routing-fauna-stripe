@@ -1,10 +1,10 @@
-import { useEffect } from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
+import { useSession } from 'next-auth/react';
 import Head from 'next/head';
 import Link from 'next/link';
-import { useSession } from 'next-auth/client';
 import { useRouter } from 'next/router';
 import { RichText } from 'prismic-dom';
+import { useEffect } from 'react';
 
 import { getPrismicClient } from '../../../services/prismic';
 
@@ -20,7 +20,7 @@ interface PostPreviewProps {
 }
 
 export default function PostPreview({ post }: PostPreviewProps) {
-  const [session] = useSession();
+  const { data: session } = useSession();
 
   const router = useRouter();
 
@@ -52,7 +52,7 @@ export default function PostPreview({ post }: PostPreviewProps) {
             <Link href="/">
               <a>Subscribe now</a>
             </Link>
-            {" "}🤗
+            <span> 🤗</span>
           </div>
         </article>
       </main>

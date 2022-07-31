@@ -1,8 +1,8 @@
+import Prismic from '@prismicio/client';
 import { GetStaticProps } from 'next';
+import { useSession } from "next-auth/react";
 import Head from 'next/head';
 import Link from 'next/link';
-import { useSession } from 'next-auth/client';
-import Prismic from '@prismicio/client';
 import { RichText } from 'prismic-dom';
 
 import { getPrismicClient } from '../../services/prismic';
@@ -21,7 +21,7 @@ type PostsProps = {
 }
 
 export default function Posts({ posts }: PostsProps) {
-  const [session] = useSession();
+  const { data: session } = useSession()
 
   return (
     <>
